@@ -50,6 +50,7 @@ public class ProductServiceImpl implements IProductService {
    * @param ids
    * @return
    */
+  @Cacheable(cacheNames = "orderService:product:listByIds")
   @Override
   public List<Product> selectProductListByIds(List<Integer> ids) {
     System.out.println("-----orderService-----selectProductListByIds-----");
