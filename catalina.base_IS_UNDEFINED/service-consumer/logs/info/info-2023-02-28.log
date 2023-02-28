@@ -518,3 +518,127 @@
 2023-02-28 14:50:06.890 [org.springframework.web.servlet.DispatcherServlet][RMI TCP Connection(2)-26.26.26.1][547][INFO] - Completed initialization in 1 ms
 2023-02-28 14:50:06.890 [com.zaxxer.hikari.HikariDataSource][RMI TCP Connection(3)-26.26.26.1][110][INFO] - HikariPool-1 - Starting...
 2023-02-28 14:50:07.039 [com.zaxxer.hikari.HikariDataSource][RMI TCP Connection(3)-26.26.26.1][123][INFO] - HikariPool-1 - Start completed.
+2023-02-28 14:55:05.116 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:00:05.120 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:05:05.122 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:10:05.132 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:15:05.145 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:20:05.146 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:25:05.153 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:27:31.313 [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry][SpringApplicationShutdownHook][62][INFO] - Unregistering application SERVICE-CONSUMER with eureka with status DOWN
+2023-02-28 15:27:31.313 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][1352][INFO] - Saw local status change event StatusChangeEvent [timestamp=1677569251313, current=DOWN, previous=UP]
+2023-02-28 15:27:31.314 [com.netflix.discovery.DiscoveryClient][DiscoveryClient-InstanceInfoReplicator-0][873][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081: registering service...
+2023-02-28 15:27:31.329 [com.netflix.discovery.DiscoveryClient][DiscoveryClient-InstanceInfoReplicator-0][882][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081 - registration status: 204
+2023-02-28 15:27:31.718 [com.zaxxer.hikari.HikariDataSource][SpringApplicationShutdownHook][350][INFO] - HikariPool-1 - Shutdown initiated...
+2023-02-28 15:27:31.729 [com.zaxxer.hikari.HikariDataSource][SpringApplicationShutdownHook][352][INFO] - HikariPool-1 - Shutdown completed.
+2023-02-28 15:27:31.730 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][935][INFO] - Shutting down DiscoveryClient ...
+2023-02-28 15:27:34.744 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][971][INFO] - Unregistering ...
+2023-02-28 15:27:34.759 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][973][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081 - deregister  status: 200
+2023-02-28 15:27:34.762 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][960][INFO] - Completed shut down of DiscoveryClient
+2023-02-28 15:27:40.145 [com.example.ServiceConsumerApplication][main][55][INFO] - Starting ServiceConsumerApplication using Java 11.0.16 on LAPTOP-OVE9GQU3 with PID 33556 (D:\IBM\totuirals\springcloud\hystrix\hystrix\order-service-rest\target\classes started by 86181 in D:\IBM\totuirals\springcloud\hystrix\hystrix)
+2023-02-28 15:27:40.147 [com.example.ServiceConsumerApplication][main][631][INFO] - No active profile set, falling back to 1 default profile: "default"
+2023-02-28 15:27:40.981 [org.springframework.cloud.context.scope.GenericScope][main][283][INFO] - BeanFactory id=e272a6c8-c9e6-3a09-a692-843a1fb201a4
+2023-02-28 15:27:41.262 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer][main][108][INFO] - Tomcat initialized with port(s): 8081 (http)
+2023-02-28 15:27:41.268 [org.apache.coyote.http11.Http11NioProtocol][main][173][INFO] - Initializing ProtocolHandler ["http-nio-8081"]
+2023-02-28 15:27:41.269 [org.apache.catalina.core.StandardService][main][173][INFO] - Starting service [Tomcat]
+2023-02-28 15:27:41.269 [org.apache.catalina.core.StandardEngine][main][173][INFO] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 15:27:41.417 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][main][173][INFO] - Initializing Spring embedded WebApplicationContext
+2023-02-28 15:27:41.417 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][main][292][INFO] - Root WebApplicationContext: initialization completed in 1240 ms
+2023-02-28 15:27:44.344 [org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration][main][71][INFO] - Eureka HTTP Client uses RestTemplate.
+2023-02-28 15:27:44.510 [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver][main][58][INFO] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-28 15:27:44.577 [org.springframework.cloud.netflix.eureka.InstanceInfoFactory][main][67][INFO] - Setting initial instance status as: STARTING
+2023-02-28 15:27:44.607 [com.netflix.discovery.DiscoveryClient][main][372][INFO] - Initializing Eureka in region us-east-1
+2023-02-28 15:27:44.612 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][main][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:27:44.628 [com.netflix.discovery.DiscoveryClient][main][1007][INFO] - Disable delta property : false
+2023-02-28 15:27:44.628 [com.netflix.discovery.DiscoveryClient][main][1008][INFO] - Single vip registry refresh property : null
+2023-02-28 15:27:44.628 [com.netflix.discovery.DiscoveryClient][main][1009][INFO] - Force full registry fetch : false
+2023-02-28 15:27:44.628 [com.netflix.discovery.DiscoveryClient][main][1010][INFO] - Application is null : false
+2023-02-28 15:27:44.628 [com.netflix.discovery.DiscoveryClient][main][1011][INFO] - Registered Applications size is zero : true
+2023-02-28 15:27:44.628 [com.netflix.discovery.DiscoveryClient][main][1013][INFO] - Application version is -1: true
+2023-02-28 15:27:44.628 [com.netflix.discovery.DiscoveryClient][main][1097][INFO] - Getting all instance registry info from the eureka server
+2023-02-28 15:27:44.915 [com.netflix.discovery.DiscoveryClient][main][1106][INFO] - The response status is 200
+2023-02-28 15:27:44.920 [com.netflix.discovery.DiscoveryClient][main][1321][INFO] - Starting heartbeat executor: renew interval is: 30
+2023-02-28 15:27:44.923 [com.netflix.discovery.InstanceInfoReplicator][main][60][INFO] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-28 15:27:44.927 [com.netflix.discovery.DiscoveryClient][main][492][INFO] - Discovery Client initialized at timestamp 1677569264926 with initial instances count: 4
+2023-02-28 15:27:44.929 [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry][main][41][INFO] - Registering application SERVICE-CONSUMER with eureka with status UP
+2023-02-28 15:27:44.929 [com.netflix.discovery.DiscoveryClient][main][1352][INFO] - Saw local status change event StatusChangeEvent [timestamp=1677569264929, current=UP, previous=STARTING]
+2023-02-28 15:27:44.931 [com.netflix.discovery.DiscoveryClient][DiscoveryClient-InstanceInfoReplicator-0][873][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081: registering service...
+2023-02-28 15:27:44.933 [org.apache.coyote.http11.Http11NioProtocol][main][173][INFO] - Starting ProtocolHandler ["http-nio-8081"]
+2023-02-28 15:27:44.958 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer][main][220][INFO] - Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-28 15:27:44.959 [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration][main][144][INFO] - Updating port to 8081
+2023-02-28 15:27:45.055 [com.netflix.discovery.DiscoveryClient][DiscoveryClient-InstanceInfoReplicator-0][882][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081 - registration status: 204
+2023-02-28 15:27:45.681 [com.example.ServiceConsumerApplication][main][61][INFO] - Started ServiceConsumerApplication in 6.576 seconds (JVM running for 7.761)
+2023-02-28 15:27:46.210 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][RMI TCP Connection(2)-26.26.26.1][173][INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-28 15:27:46.210 [org.springframework.web.servlet.DispatcherServlet][RMI TCP Connection(2)-26.26.26.1][525][INFO] - Initializing Servlet 'dispatcherServlet'
+2023-02-28 15:27:46.213 [com.zaxxer.hikari.HikariDataSource][RMI TCP Connection(1)-26.26.26.1][110][INFO] - HikariPool-1 - Starting...
+2023-02-28 15:27:46.213 [org.springframework.web.servlet.DispatcherServlet][RMI TCP Connection(2)-26.26.26.1][547][INFO] - Completed initialization in 2 ms
+2023-02-28 15:27:46.449 [com.zaxxer.hikari.HikariDataSource][RMI TCP Connection(1)-26.26.26.1][123][INFO] - HikariPool-1 - Start completed.
+2023-02-28 15:32:44.636 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:36:30.367 [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry][SpringApplicationShutdownHook][62][INFO] - Unregistering application SERVICE-CONSUMER with eureka with status DOWN
+2023-02-28 15:36:30.367 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][1352][INFO] - Saw local status change event StatusChangeEvent [timestamp=1677569790367, current=DOWN, previous=UP]
+2023-02-28 15:36:30.367 [com.netflix.discovery.DiscoveryClient][DiscoveryClient-InstanceInfoReplicator-0][873][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081: registering service...
+2023-02-28 15:36:30.376 [com.netflix.discovery.DiscoveryClient][DiscoveryClient-InstanceInfoReplicator-0][882][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081 - registration status: 204
+2023-02-28 15:36:30.736 [com.zaxxer.hikari.HikariDataSource][SpringApplicationShutdownHook][350][INFO] - HikariPool-1 - Shutdown initiated...
+2023-02-28 15:36:30.748 [com.zaxxer.hikari.HikariDataSource][SpringApplicationShutdownHook][352][INFO] - HikariPool-1 - Shutdown completed.
+2023-02-28 15:36:30.749 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][935][INFO] - Shutting down DiscoveryClient ...
+2023-02-28 15:36:33.753 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][971][INFO] - Unregistering ...
+2023-02-28 15:36:33.769 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][973][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081 - deregister  status: 200
+2023-02-28 15:36:33.773 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][960][INFO] - Completed shut down of DiscoveryClient
+2023-02-28 15:36:40.448 [com.example.ServiceConsumerApplication][main][55][INFO] - Starting ServiceConsumerApplication using Java 11.0.16 on LAPTOP-OVE9GQU3 with PID 33940 (D:\IBM\totuirals\springcloud\hystrix\hystrix\order-service-rest\target\classes started by 86181 in D:\IBM\totuirals\springcloud\hystrix\hystrix)
+2023-02-28 15:36:40.451 [com.example.ServiceConsumerApplication][main][631][INFO] - No active profile set, falling back to 1 default profile: "default"
+2023-02-28 15:36:41.245 [org.springframework.cloud.context.scope.GenericScope][main][283][INFO] - BeanFactory id=e272a6c8-c9e6-3a09-a692-843a1fb201a4
+2023-02-28 15:36:41.497 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer][main][108][INFO] - Tomcat initialized with port(s): 8081 (http)
+2023-02-28 15:36:41.504 [org.apache.coyote.http11.Http11NioProtocol][main][173][INFO] - Initializing ProtocolHandler ["http-nio-8081"]
+2023-02-28 15:36:41.504 [org.apache.catalina.core.StandardService][main][173][INFO] - Starting service [Tomcat]
+2023-02-28 15:36:41.505 [org.apache.catalina.core.StandardEngine][main][173][INFO] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 15:36:41.645 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][main][173][INFO] - Initializing Spring embedded WebApplicationContext
+2023-02-28 15:36:41.645 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][main][292][INFO] - Root WebApplicationContext: initialization completed in 1167 ms
+2023-02-28 15:36:44.257 [org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration][main][71][INFO] - Eureka HTTP Client uses RestTemplate.
+2023-02-28 15:36:44.398 [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver][main][58][INFO] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-28 15:36:44.446 [org.springframework.cloud.netflix.eureka.InstanceInfoFactory][main][67][INFO] - Setting initial instance status as: STARTING
+2023-02-28 15:36:44.471 [com.netflix.discovery.DiscoveryClient][main][372][INFO] - Initializing Eureka in region us-east-1
+2023-02-28 15:36:44.475 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][main][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:36:44.489 [com.netflix.discovery.DiscoveryClient][main][1007][INFO] - Disable delta property : false
+2023-02-28 15:36:44.489 [com.netflix.discovery.DiscoveryClient][main][1008][INFO] - Single vip registry refresh property : null
+2023-02-28 15:36:44.489 [com.netflix.discovery.DiscoveryClient][main][1009][INFO] - Force full registry fetch : false
+2023-02-28 15:36:44.489 [com.netflix.discovery.DiscoveryClient][main][1010][INFO] - Application is null : false
+2023-02-28 15:36:44.489 [com.netflix.discovery.DiscoveryClient][main][1011][INFO] - Registered Applications size is zero : true
+2023-02-28 15:36:44.489 [com.netflix.discovery.DiscoveryClient][main][1013][INFO] - Application version is -1: true
+2023-02-28 15:36:44.489 [com.netflix.discovery.DiscoveryClient][main][1097][INFO] - Getting all instance registry info from the eureka server
+2023-02-28 15:36:44.701 [com.netflix.discovery.DiscoveryClient][main][1106][INFO] - The response status is 200
+2023-02-28 15:36:44.703 [com.netflix.discovery.DiscoveryClient][main][1321][INFO] - Starting heartbeat executor: renew interval is: 30
+2023-02-28 15:36:44.705 [com.netflix.discovery.InstanceInfoReplicator][main][60][INFO] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-28 15:36:44.708 [com.netflix.discovery.DiscoveryClient][main][492][INFO] - Discovery Client initialized at timestamp 1677569804707 with initial instances count: 3
+2023-02-28 15:36:44.709 [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry][main][41][INFO] - Registering application SERVICE-CONSUMER with eureka with status UP
+2023-02-28 15:36:44.710 [com.netflix.discovery.DiscoveryClient][main][1352][INFO] - Saw local status change event StatusChangeEvent [timestamp=1677569804710, current=UP, previous=STARTING]
+2023-02-28 15:36:44.712 [com.netflix.discovery.DiscoveryClient][DiscoveryClient-InstanceInfoReplicator-0][873][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081: registering service...
+2023-02-28 15:36:44.713 [org.apache.coyote.http11.Http11NioProtocol][main][173][INFO] - Starting ProtocolHandler ["http-nio-8081"]
+2023-02-28 15:36:44.729 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer][main][220][INFO] - Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-28 15:36:44.730 [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration][main][144][INFO] - Updating port to 8081
+2023-02-28 15:36:44.816 [com.netflix.discovery.DiscoveryClient][DiscoveryClient-InstanceInfoReplicator-0][882][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081 - registration status: 204
+2023-02-28 15:36:45.332 [com.example.ServiceConsumerApplication][main][61][INFO] - Started ServiceConsumerApplication in 5.906 seconds (JVM running for 7.028)
+2023-02-28 15:36:46.297 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][RMI TCP Connection(2)-26.26.26.1][173][INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-28 15:36:46.297 [org.springframework.web.servlet.DispatcherServlet][RMI TCP Connection(2)-26.26.26.1][525][INFO] - Initializing Servlet 'dispatcherServlet'
+2023-02-28 15:36:46.299 [org.springframework.web.servlet.DispatcherServlet][RMI TCP Connection(2)-26.26.26.1][547][INFO] - Completed initialization in 2 ms
+2023-02-28 15:36:46.299 [com.zaxxer.hikari.HikariDataSource][RMI TCP Connection(3)-26.26.26.1][110][INFO] - HikariPool-1 - Starting...
+2023-02-28 15:36:46.454 [com.zaxxer.hikari.HikariDataSource][RMI TCP Connection(3)-26.26.26.1][123][INFO] - HikariPool-1 - Start completed.
+2023-02-28 15:41:44.491 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:46:44.499 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:51:44.514 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 15:56:44.529 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 16:01:44.536 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 16:06:44.539 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 16:11:44.551 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 16:16:44.566 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 16:21:44.575 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 16:26:44.584 [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver][AsyncResolver-bootstrap-executor-0][43][INFO] - Resolving eureka endpoints via configuration
+2023-02-28 16:27:14.743 [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry][SpringApplicationShutdownHook][62][INFO] - Unregistering application SERVICE-CONSUMER with eureka with status DOWN
+2023-02-28 16:27:14.743 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][1352][INFO] - Saw local status change event StatusChangeEvent [timestamp=1677572834743, current=DOWN, previous=UP]
+2023-02-28 16:27:14.743 [com.netflix.discovery.DiscoveryClient][DiscoveryClient-InstanceInfoReplicator-0][873][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081: registering service...
+2023-02-28 16:27:14.749 [com.netflix.discovery.DiscoveryClient][DiscoveryClient-InstanceInfoReplicator-0][882][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081 - registration status: 204
+2023-02-28 16:27:15.211 [com.zaxxer.hikari.HikariDataSource][SpringApplicationShutdownHook][350][INFO] - HikariPool-1 - Shutdown initiated...
+2023-02-28 16:27:15.218 [com.zaxxer.hikari.HikariDataSource][SpringApplicationShutdownHook][352][INFO] - HikariPool-1 - Shutdown completed.
+2023-02-28 16:27:15.219 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][935][INFO] - Shutting down DiscoveryClient ...
+2023-02-28 16:27:18.225 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][971][INFO] - Unregistering ...
+2023-02-28 16:27:18.227 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][973][INFO] - DiscoveryClient_SERVICE-CONSUMER/192.168.126.1:8081 - deregister  status: 200
+2023-02-28 16:27:18.230 [com.netflix.discovery.DiscoveryClient][SpringApplicationShutdownHook][960][INFO] - Completed shut down of DiscoveryClient

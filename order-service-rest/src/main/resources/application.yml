@@ -5,6 +5,9 @@ server:
     enabled: true
     # 配置支持类型
     mime-types: application/json,application/xml,text/html,text/html,text/plain
+  tomcat:
+    threads:
+      max: 10 # 降低最大线程数方便模拟测试
 
 spring:
   application:
@@ -21,6 +24,27 @@ spring:
     url: "jdbc:mysql://localhost:3306/micro_service?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai"
     username: root
     password: password
+  redis:
+    #超时时间
+    timeout: 10000ms
+    #服务器地址
+    host: 192.168.126.61
+    #服务器端口
+    port: 6379
+    #数据库
+    database: 0
+    #密码
+    password: Rational123
+    lettuce:
+      pool:
+        #最大连接数，默认8
+        max-active: 1024
+        #最大连接阻塞等待时间，默认-1
+        max-wait: 10000ms
+        #最大空闲连接
+        max-idle: 200
+        #最小空闲连接
+        min-idle: 5
 
 # 配置Eureka Server注册中心
 eureka:

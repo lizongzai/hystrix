@@ -5,6 +5,7 @@ import com.example.service.IProductService;
 import java.util.List;
 import javax.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.core.ParameterizedTypeReference;
@@ -34,6 +35,7 @@ public class ProductServiceImpl implements IProductService {
    * @return
    */
 
+  @Cacheable(cacheNames = "orderService:product:list")
   @Override
   public List<Product> selectProductList() {
     return restTemplate.exchange("http://product-service/product/list",
@@ -63,9 +65,10 @@ public class ProductServiceImpl implements IProductService {
    * @param id
    * @return
    */
+  @Cacheable(cacheNames = "orderService:product:single", key = "#id")
   @Override
   public Product selectProductById(Integer id) {
-    return restTemplate.getForObject("http://product-service/product/" + id, Product.class);
+        return restTemplate.getForObject("http://product-service/product/" + id, Product.class);
   }
 
 }

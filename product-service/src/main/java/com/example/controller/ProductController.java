@@ -35,6 +35,12 @@ public class ProductController {
    */
   @GetMapping("/list")
   public List<Product> selectProductList() {
+    try {
+      // 设置超时验证
+      Thread.sleep(2000);
+    } catch (InterruptedException e) {
+      throw new RuntimeException(e);
+    }
     return productService.selectProductList();
   }
 
