@@ -3,6 +3,7 @@ server:
 
 spring:
   application:
+    # 应用名称(集群内相同)
     name: eureka-server
   security:
     user:
