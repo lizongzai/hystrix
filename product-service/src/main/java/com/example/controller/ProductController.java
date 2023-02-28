@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -50,8 +51,8 @@ public class ProductController {
    * @param ids
    * @return
    */
-  @GetMapping("/{ids}/product/listByIds")
-  public List<Product> selectProductListByIds(@PathVariable("ids") List<Integer> ids) {
+  @GetMapping("/listByIds")
+  public List<Product> selectProductListByIds(@RequestParam("id") List<Integer> ids) {
     return productService.selectProductListByIds(ids);
   }
 

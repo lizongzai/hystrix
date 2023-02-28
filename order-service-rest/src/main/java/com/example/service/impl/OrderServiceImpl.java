@@ -76,7 +76,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
   @Override
   public Order queryOrderById(Integer id) {
     //查询商品列表
-    List<Product> productList = productService.selectProductListByIds(Collections.singletonList(1));
+    List<Product> productList = productService.selectProductListByIds(Arrays.asList(1,2,3));
 
     System.out.println("商品信息 = " + productList);
 
