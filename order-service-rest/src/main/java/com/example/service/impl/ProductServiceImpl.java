@@ -34,7 +34,6 @@ public class ProductServiceImpl implements IProductService {
    *
    * @return
    */
-
   @Cacheable(cacheNames = "orderService:product:list")
   @Override
   public List<Product> selectProductList() {
@@ -56,7 +55,8 @@ public class ProductServiceImpl implements IProductService {
     System.out.println("-----orderService-----selectProductListByIds-----");
     StringBuffer sb = new StringBuffer();
     ids.forEach(id -> sb.append("id=" + id + "&"));
-    return restTemplate.getForObject("http://product-service/product/listByIds?" + sb.toString(), List.class);
+    return restTemplate.getForObject("http://product-service/product/listByIds?" + sb.toString(),
+        List.class);
   }
 
   /**
@@ -68,7 +68,7 @@ public class ProductServiceImpl implements IProductService {
   @Cacheable(cacheNames = "orderService:product:single", key = "#id")
   @Override
   public Product selectProductById(Integer id) {
-        return restTemplate.getForObject("http://product-service/product/" + id, Product.class);
+    return restTemplate.getForObject("http://product-service/product/" + id, Product.class);
   }
 
 }
