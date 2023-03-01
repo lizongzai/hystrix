@@ -31,6 +31,11 @@
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
       <version>3.0.2</version>
     </dependency>
+<!--    &lt;!&ndash; 配置hystrix所需依赖的包 &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.cloud</groupId>-->
+<!--      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>-->
+<!--    </dependency>-->
 
     <!--spring cloud openfeign 依赖-->
     <dependency>
@@ -109,13 +114,6 @@
       <artifactId>commons-pool2</artifactId>
     </dependency>
 
-    <!-- spring-cloud netflix hystrix 依赖 -->
-    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix -->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-      <version>2.2.10.RELEASE</version>
-    </dependency>
 
   </dependencies>
 

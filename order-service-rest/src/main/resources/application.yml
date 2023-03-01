@@ -12,7 +12,7 @@ server:
 spring:
   application:
     # 应用名称
-    name: service-consumer
+    name: order-service-rest
   main:
     allow-circular-references: true
   mvc:
@@ -66,8 +66,8 @@ eureka:
     registry-fetch-interval-seconds: 10
 
 # 局部负载均衡策略
-# service-provider是指被调用者的微服务名称
-service-provider:
+# product-service是指被调用者的微服务名称
+product-service:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadBalancer.RandomRule
 #    ribbon:
@@ -84,6 +84,6 @@ feign:
     config:
       service-provider: # 需要调用的服务名称
         logger-level: Full
-#ribbon:
-#  ConnectionTimeout: 5000 # 请求连接超时时间,默认为1秒
-#  ReadTimeout: 5000 # 请求处理的超时时间
+ribbon:
+  ConnectionTimeout: 5000 # 请求连接超时时间,默认为1秒
+  ReadTimeout: 5000 # 请求处理的超时时间

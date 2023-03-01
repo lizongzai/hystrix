@@ -31,12 +31,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
   @Resource
   private OrderMapper orderMapper;
   @Autowired
-  @Resource
-  private RestTemplate restTemplate;
-  @Autowired
   private IProductService productService;
-  @Autowired
-  private LoadBalancerClient loadBalancerClient; //Ribbon负载均衡器
+
 
   /**
    * 根据主键查询订单-->调用商品服务/product/list
