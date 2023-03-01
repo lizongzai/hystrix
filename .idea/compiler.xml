@@ -11,6 +11,7 @@
         <module name="order-service-rest" />
         <module name="eureka-server01" />
         <module name="eureka-server02" />
+        <module name="order-service-feign" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,6 +20,7 @@
       <module name="eureka-server01" options="-parameters" />
       <module name="eureka-server02" options="-parameters" />
       <module name="hystrix" options="" />
+      <module name="order-service-feign" options="-parameters" />
       <module name="order-service-rest" options="-parameters" />
       <module name="product-service" options="-parameters" />
     </option>
