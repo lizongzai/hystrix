@@ -54,7 +54,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     //查询商品列表
     List<Product> productList = productService.selectProductList();
 
-    System.out.println("商品信息 = " + productList);
+    //System.out.println("商品信息 = " + productList);
 
     //获取订单信息
     Order mapperOrderById = orderMapper.getOrderById(id);
@@ -78,7 +78,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     //查询商品列表
     List<Product> productList = productService.selectProductListByIds(Arrays.asList(1,2,3));
 
-    System.out.println("商品信息 = " + productList);
+    //System.out.println("商品信息 = " + productList);
 
     //获取订单信息
     Order mapperOrderById = orderMapper.getOrderById(id);
