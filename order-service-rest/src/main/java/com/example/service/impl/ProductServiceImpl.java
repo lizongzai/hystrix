@@ -154,6 +154,36 @@ public class ProductServiceImpl implements IProductService {
 //    return restTemplate.getForObject("http://product-service/product/" + id, Product.class);
 //  }
 
+//  /**
+//   * 功能描述: 根据主键查询商品
+//   *
+//   * @param id
+//   * @return
+//   */
+//  // 声明需要服务容错的方法
+//  // 服务熔断
+//  @HystrixCommand(commandProperties = {
+//      // 当请求符合熔断条件触发 fallbackMethod 默认 20 个
+//      @HystrixProperty(name = HystrixPropertiesManager.CIRCUIT_BREAKER_REQUEST_VOLUME_THRESHOLD, value = "10"),
+//      // 请求错误率大于 50% 就启动熔断器，然后 for 循环发起重试请求，当请求符合熔断条件触发 fallbackMethod
+//      @HystrixProperty(name = HystrixPropertiesManager.CIRCUIT_BREAKER_ERROR_THRESHOLD_PERCENTAGE, value = "50"),
+//      // 熔断多少秒后去重试请求，默认 5s
+//      @HystrixProperty(name = HystrixPropertiesManager.CIRCUIT_BREAKER_SLEEP_WINDOW_IN_MILLISECONDS, value = "5000"),
+//  }, fallbackMethod = "selectProductByIdFallback")
+//  @Override
+//  public Product selectProductById(Integer id) {
+//    //System.out.println(Thread.currentThread().getName() + "-----orderService-----selectProductById-----");
+//    System.out.println("-----selectProductById-----" + LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME));
+//
+//    // 模拟查询主键为 1 的商品信息会导致异常
+//    if (1 == id) {
+//      throw new RuntimeException("查询主键为 1 的商品信息导致异常");
+//    }
+//
+//    return restTemplate.getForObject("http://product-service/product/" + id, Product.class);
+//  }
+
+
   /**
    * 功能描述: 根据主键查询商品
    *
@@ -161,24 +191,22 @@ public class ProductServiceImpl implements IProductService {
    * @return
    */
   // 声明需要服务容错的方法
-  // 服务熔断
-  @HystrixCommand(commandProperties = {
-      // 当请求符合熔断条件触发 fallbackMethod 默认 20 个
-      @HystrixProperty(name = HystrixPropertiesManager.CIRCUIT_BREAKER_REQUEST_VOLUME_THRESHOLD, value = "10"),
-      // 请求错误率大于 50% 就启动熔断器，然后 for 循环发起重试请求，当请求符合熔断条件触发 fallbackMethod
-      @HystrixProperty(name = HystrixPropertiesManager.CIRCUIT_BREAKER_ERROR_THRESHOLD_PERCENTAGE, value = "50"),
-      // 熔断多少秒后去重试请求，默认 5s
-      @HystrixProperty(name = HystrixPropertiesManager.CIRCUIT_BREAKER_SLEEP_WINDOW_IN_MILLISECONDS, value = "5000"),
-  }, fallbackMethod = "selectProductByIdFallback")
+  // 服务降级
+  @HystrixCommand(fallbackMethod = "selectProductByIdFallback")
   @Override
   public Product selectProductById(Integer id) {
     //System.out.println(Thread.currentThread().getName() + "-----orderService-----selectProductById-----");
     System.out.println("-----selectProductById-----" + LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME));
 
-    // 模拟查询主键为 1 的商品信息会导致异常
-    if (1 == id) {
-      throw new RuntimeException("查询主键为 1 的商品信息导致异常");
-    }
+    // 验证降级方法一: 模拟查询主键为 1 的商品信息会导致异常
+    //    if (1 == id) {
+    //      throw new RuntimeException("查询主键为 1 的商品信息导致异常");
+    //    }
+
+    // 验证降级方法二: 不同类型的数据转换
+    //    Integer.parseInt("T");
+
+    // 验证降级方法三: 将product-service项目停止服务
 
     return restTemplate.getForObject("http://product-service/product/" + id, Product.class);
   }

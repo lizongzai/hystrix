@@ -100,7 +100,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
   @Override
   public Order searchOrderById(Integer id) {
     //查询商品列表
-    Product productList = productService.selectProductById(1);
+    Product productList = productService.selectProductById(id);
 
     //System.out.println("商品信息 = " + productList);
 
