@@ -1,7 +1,5 @@
 package com.example.service;
 
-import com.example.fallback.ProductServiceFallback;
-import com.example.fallback.ProductServiceFallbackFactory;
 import com.example.pojo.Product;
 import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -17,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @since 1.0.0
  */
 // 声明需要调用的服务和服务熔断处理类
-@FeignClient(value = "product-service", fallbackFactory = ProductServiceFallbackFactory.class)
+@FeignClient(value = "product-service")
 public interface IProductService {
 
   /**
