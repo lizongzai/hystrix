@@ -5,9 +5,15 @@ import com.example.service.IProductService;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.springframework.stereotype.Component;
 
-@Component
+/**
+ * 功能描述: 服务熔断降级处理
+ *
+ * @author lizongzai
+ * @date 2023/03/01 14:45
+ * @since 1.0.0
+ */
+//@Component
 public class ProductServiceFallback implements IProductService {
 
   /**
