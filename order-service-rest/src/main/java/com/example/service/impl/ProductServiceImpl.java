@@ -68,6 +68,7 @@ public class ProductServiceImpl implements IProductService {
   @Cacheable(cacheNames = "orderService:product:single", key = "#id")
   @Override
   public Product selectProductById(Integer id) {
+    System.out.println("-----orderService-----selectProductById-----");
     return restTemplate.getForObject("http://product-service/product/" + id, Product.class);
   }
 
