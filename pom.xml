@@ -11,6 +11,7 @@
     <module>product-service</module>
     <module>order-service-rest</module>
     <module>order-service-feign</module>
+    <module>order-service</module>
   </modules>
   <packaging>pom</packaging>
 

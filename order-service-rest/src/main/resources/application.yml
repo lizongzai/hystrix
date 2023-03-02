@@ -87,3 +87,14 @@ feign:
 ribbon:
   ConnectionTimeout: 5000 # 请求连接超时时间,默认为1秒
   ReadTimeout: 5000 # 请求处理的超时时间
+
+# 度量指标监控与监控检测
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+# 配置代理地址
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"

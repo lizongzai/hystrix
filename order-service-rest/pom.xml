@@ -76,6 +76,23 @@
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
 
+    <!-- spring-cloud netflix hystrix 依赖 -->
+    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+      <version>2.2.10.RELEASE</version>
+    </dependency>
+
+
+    <!--spring netflix hystrix dashboard 依赖-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+      <version>2.2.10.RELEASE</version>
+    </dependency>
+
+
     <!--Junit 测试单元依赖-->
     <dependency>
       <groupId>junit</groupId>
@@ -109,13 +126,7 @@
       <artifactId>commons-pool2</artifactId>
     </dependency>
 
-    <!-- spring-cloud netflix hystrix 依赖 -->
-    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix -->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-      <version>2.2.10.RELEASE</version>
-    </dependency>
+
 
   </dependencies>
 </project>
