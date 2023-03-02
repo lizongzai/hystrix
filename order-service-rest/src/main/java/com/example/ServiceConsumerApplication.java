@@ -17,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableHystrixDashboard // 开启数据监控注解
 @EnableHystrix  // 开启熔断器注解 2 选 1，@EnableHystrix 封装了 @EnableCircuitBreaker
 @EnableTurbine // 开启数据监控注解
-//@EnableCaching // 开启缓存注解
+@EnableCaching // 开启缓存注解
 @EnableFeignClients
 @SpringBootApplication
 @MapperScan("com.example.mapper")
