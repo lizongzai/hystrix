@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hystrix-turbine" />
         <module name="product-service" />
         <module name="order-service-rest" />
         <module name="eureka-server01" />
@@ -21,6 +22,7 @@
       <module name="eureka-server01" options="-parameters" />
       <module name="eureka-server02" options="-parameters" />
       <module name="hystrix" options="" />
+      <module name="hystrix-turbine" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="order-service-feign" options="-parameters" />
       <module name="order-service-rest" options="-parameters" />

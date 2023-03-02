@@ -1,0 +1,47 @@
+server:
+  port: 9090 # 端口
+
+spring:
+  application:
+    name: hystrix-turbine # 应用名称
+#  cloud:
+#    loadbalancer:
+#      enabled: true
+
+# 配置 Eureka Server 注册中心
+eureka:
+  instance:
+    prefer-ip-address: true       # 是否使用 ip 地址注册
+    instance-id: ${spring.cloud.client.ip-address}:${server.port} # ip:port
+  client:
+    service-url: # 设置服务注册中心地址
+      defaultZone: http://root:123456@localhost:8761/eureka/,http://root:123456@localhost:8762/eureka/
+
+# Feign 开启 Hystrix 支持
+#feign:
+#  hystrix:
+#    enabled: true
+#  circuitbreaker:
+#    enabled: true
+#product-service:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadBalancer.RandomRule
+
+# 聚合监控
+turbine:
+  # 服务监控列表
+  app-config: order-service-rest,order-service-feign
+  # 指定集群名称
+  cluster-name-expression: "'default'"
+
+
+# 度量指标监控与监控检测
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+# 配置代理地址
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"

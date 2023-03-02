@@ -76,14 +76,27 @@ feign:
 
 
 #在30秒内，发生20次以上的请求时，假如错误率达到50%以上，则断路器将被打开。
+#hystrix:
+#  dashboard:
+#    proxy-stream-allow-list: "localhost"
+#  command:
+#    default: # 或者填写具体的服务名称
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 5000        #请求超时时间
+#      circuitBreaker:
+#        sleepWindowInMilliseconds: 30000    #窗口期
+#        requestVolumeThreshold: 20        #请求阈值
+#        errorThresholdPercentage: 50        #错误百分比阈值
+
+# 度量指标监控与监控检测
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+# 配置代理地址
 hystrix:
-  command:
-    default: # 或者填写具体的服务名称
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 5000        #请求超时时间
-      circuitBreaker:
-        sleepWindowInMilliseconds: 30000    #窗口期
-        requestVolumeThreshold: 20        #请求阈值
-        errorThresholdPercentage: 50        #错误百分比阈值
+  dashboard:
+    proxy-stream-allow-list: "localhost"
